@@ -1,0 +1,437 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет текста  #212121;
+ */
+/* белый #FFFFFF  */
+/* акцент #2196F3 */
+/* вторичный цвет фона #2F303A; */
+
+h1,h2,h3,h4,h5,h6,ul {
+  margin:0;
+  padding:0;
+}
+
+.description {
+  margin-bottom:0;
+}
+
+html {
+ box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+
+:root {
+  --primary-text-color:#757575;
+  --title-text-color:#212121;
+  --accent-color: #2196F3;
+  --primary-white-color: #ffffff;
+  --background-color: #2F303A;
+  --secondary-bc: #F5F4FA;
+}
+ body{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+
+  
+}
+/* ---------- Контейнеры ------- */
+
+.container  {
+
+  width: 1230px;
+  padding:94px 15px;
+
+  margin: 0 auto;
+
+  background-color: var (--background-color);
+ 
+}
+.container.filter,
+.container.main-nav {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.container-footer  {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin: 0 auto;
+
+  background-color: var (--background-color);
+ 
+}
+
+.flex-container {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -15px;
+  
+}
+
+.flex-element {
+  width: 370px;
+  margin: 15px;
+}
+
+.flex-element:nth-child(3n){
+  margin-right: 0px;
+}
+
+.main-nav,
+.features,
+.list-works,
+.list-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  
+}
+/* ----------------------- */
+.logo {
+  font-family:  "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+
+  margin-right: 80px;
+ 
+}
+
+.web {
+  color:var(--accent-color);
+}
+
+.navigation li{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--title-text-color);
+  display: inline-block;
+  
+  
+}
+.main-menu{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin-top: 116px;
+  margin-bottom: 33px;
+  
+ 
+}
+
+.main-menu .button {
+  min-width: 0px;
+  display:inline-block;
+}
+.main-menu li {
+  display: inline-block;
+  min-width: 0px;
+}
+.main-menu li:not(:last-child){
+  margin-right: 8px;
+}
+.navigation li:not(:last-child){
+  margin-right: 50px;
+
+}
+.navigation-link{
+  padding: 34px 0;
+
+  color: var(--title-text-color);
+}
+.navigation-link:hover,
+.navigation-link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.button:hover,
+.button:focus  {
+
+  color: var(--accent-color);
+ 
+  
+}
+.contacts {
+  margin-left:auto;
+}
+
+.contacts-list + .contacts-list {
+  margin-left: 30px;
+
+}
+.navigation,
+.contacts,
+.contacts li{
+
+  display: inline-block;
+}
+.contacts .link {
+  color:var(--primary-text-color);
+  padding: 34px 0;
+}
+
+
+/* Главное меню */
+
+/* Герой */
+
+.hero {
+  background-color:var(--background-color);
+  text-align: center;
+}
+.overlay{
+  
+  background-image: url("../img/overlay.png"),
+  url("../img/Header.jpg");
+  background-color:black;
+  max-width:1600px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.hero .title {
+  padding-top: 200px;
+  margin-bottom:30px;
+
+ font-size: 44px;
+ color: var(--primary-white-color);
+ 
+
+}
+
+/* Преимущества */
+
+
+
+.list {
+  width:270px;
+  text-align: center;
+  
+  align-items: center;
+  border-radius: 4px;
+}
+.list::before {
+  display:block;
+  height: 120px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bc);
+  margin-bottom: 30px;
+ 
+ 
+.img-features img {
+ padding:25px 0;
+}
+
+.icon-clock:before {
+  background-image: url("../img/clock.svg");
+}
+.bullet-points {
+  font-weight: bold;
+  color: var(--title-text-color);
+  margin-top: 30px;
+  
+  
+  }
+.works-name {
+ font-size: 18px;
+}
+.work-type {
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
+
+
+
+
+
+
+
+
+font-weight: bold;
+color: var(--title-text-color);
+
+}
+
+.list p {
+  
+  margin-bottom:0px;
+ 
+}
+/* Работы */
+
+.what-we-do_list:not(:last-child){
+
+  margin-right:30px;
+
+}
+
+.what-we-do {
+  font-weight: bold;
+  color: var(--primary-white-color);
+  
+}
+
+.name {
+
+  font-size: 16px;
+  font-weight: medium;
+  color: var(--title-text-color);
+}
+.social-networks {
+  display: flex;
+
+}
+.social-networks li:not(:last-child) {
+  margin-right:10px;
+}
+
+.title
+ {
+
+  font-size: 32px;
+  text-align: center;
+  color:var(--title-text-color);
+  
+}
+
+
+.works-name {
+  color: var(--title-text-color);
+}
+
+/* --------- Team ---------- */
+
+
+.img-team {
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: medium;
+  color: var(--title-text-color);
+}
+
+.profession {
+
+  margin-bottom: 16px;
+}
+
+/*  ----------- Footer ----------- */
+
+footer {
+  background-color: var(--background-color);
+}
+
+footer .logo {
+  color: white;
+}
+.adress {
+  color: var(--primary-white-color);
+}
+
+.join {
+
+  color: var(--primary-white-color );
+}
+
+.subscribe {
+  color: var(--primary-white-color );
+}
+
+
+
+
+
+/* ------------------------- */
+.button {
+  
+  padding:10px 8px;
+  min-width: 200px;
+  text-align: center;
+  display: inline-block;
+
+  font-size: 16px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  
+  
+  border-radius: 4px;
+  border:1px solid transparent;
+}
+
+.title.what-we-do,
+.title.team,
+.title.clients {
+  margin-top:0;
+  margin-bottom: 50px;
+}
+
+.title
+ {
+
+  font-size: 32px;
+  text-align: center;
+  color:var(--title-text-color);
+  margin-bottom: 50px;
+  
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.navigation-link.current {
+
+color: var(--accent-color);
+
+}
+
+.features .list:not(:last-child),
+.list-team li:not(:last-child) {
+ margin-right: 30px;
+}
+
+.list-works,
+.list-team {
+  margin-top:50px;
+ 
+  
+}
+
+.works-name {
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.work-type {
+  margin-left: 24px;
+}
