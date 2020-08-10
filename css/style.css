@@ -616,3 +616,13 @@ color: var(--accent-color);
   background-size: cover;
   background-size: no-repeat;
 }
+
+.inline-svg-icon{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+
