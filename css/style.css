@@ -149,7 +149,7 @@ html {
 } 
 
 
-.icon-mail:before{
+/* .icon-mail:before{
   background-image: url(../img/envelope.svg) ;
   background-position-y: 3px;
 
@@ -157,7 +157,7 @@ html {
 .icon-phone:before{
   background-image: url(../img/smartphone.svg) ;
   
-}
+} */
 /* ------------------ */
 .main-menu{
   font-size: 16px;
@@ -277,7 +277,7 @@ html {
  padding:25px 0;
 }
 .icon-satelite:before{
-  background-image: url("../img/satelite.svg");
+  background-image: url("../img/sprite.svg#");
 }
 .icon-clock:before {
   background-image: url("../img/clock.svg");
@@ -625,8 +625,70 @@ color: var(--accent-color);
   cursor: pointer;
 }
 
+/* Портфолио */
 
+.technocrack {
+  position: relative;;
+}
+.technocrack-description::before{
+  display: inline-block;
+  position: absolute;
+  content:"";
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+.technocrack-description{
+  
+  
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 0px;
+  top: 0px;
 
+  
+  opacity:0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+  background-color: rgba(33, 150, 243, 0.9); ;
+}
+
+.technocrack:hover .technocrack-description{
+  
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 0px;
+  top: 0px;
+
+  transition: 500ms opacity linear;
+  opacity:1;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+  background-color: rgba(33, 150, 243, 0.9); ;
+}
+
+.technocrack-description p {
+  margin:0;
+  padding: 63px 24px;
+}
 
 
 

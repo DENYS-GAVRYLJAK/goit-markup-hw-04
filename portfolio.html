@@ -21,8 +21,8 @@
         <li><a class="navigation-link list" href="">Контакты</a></li>
       </ul>
     <ul class="contacts">
-        <li class="contacts-list"><a class="link list" href="mailto:info@devstudio">info@devstudio.com</a></li>
-        <li class="contacts-list"><a class="link list" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="contacts-list icon-mail"><a class="link list" href="mailto:info@devstudio">info@devstudio.com</a></li>
+        <li class="contacts-list icon-phone"><a class="link list phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </nav>
   </header>
@@ -44,11 +44,12 @@
       <h1 hidden class="title">Все работы</h1>
       
       <ul class="flex-container">
-        <li class="flex-element">
+        <li class="technocrack" class="flex-element">
           <a href="">
-            <img src="./img/технокряк.png" width="370" alt="люди">
+            <img  src="./img/технокряк.png" width="370" alt="люди">
             <h2 class = "works-name" >Технокряк</h2>
             <p class= "work-type" >Веб-сайт</p>
+            <div class="technocrack-description"><p >Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
 
         </a>
         </li>
@@ -123,11 +124,25 @@
       </div>
       <div>
       <b class = "join">Присоединяйтесь</b>
-      <ul>
-        <li><a href="" aria-label="Ccылка на Instagram"></a></li>
-        <li><a href="" aria-label="Ccылка на Twitter"></a></li>
-        <li><a href="" aria-label="Ссылка на Facebook"></a></li>
-        <li><a href="" aria-label="Ссылка на LinkedIn"></a></li>
+      <ul class="join-main-list">
+        <li class="join-list Instagram" ><a href="" aria-label="Ccылка на Instagram">
+          <svg class="button-icon" width="20" height="20">
+            <use href="./images/дз4/sprite.svg#icon-instagram"></use>
+          </svg>
+      </a></li>
+        <li class="join-list Twitter" ><a href="" aria-label="Ccылка на Twitter"><svg class="button-icon" width="20" height="20">
+          <use href="./images/дз4/sprite.svg#icon-tvitter"></use>
+        </svg></a>
+          </li>
+        <li class="join-list Facebook" ><a href="" aria-label="Ссылка на Facebook">
+          <svg class="icon-soc-footer"  width="20" height="20" >
+          <use href="./images/дз4/sprite.svg#icon-facebook"></use>
+        </svg></a></li>
+        <li class="join-list LinkedIn" ><a href="" aria-label="Ссылка на LinkedIn">
+          <svg class="icon-soc-footer"  width="20" height="20" >
+            <use href="./images/дз4/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a></li>
       </ul>
       </div>
       <div>
